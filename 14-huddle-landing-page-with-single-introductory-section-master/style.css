@@ -1,0 +1,146 @@
+body{
+    margin: 0;
+    background-color: #674BB0;
+    color: #fff;
+    background-image: url(images/bg-desktop.svg);
+}
+/* section{
+    min-height: 100vh;
+} */
+.logo{
+    margin: 0 0 2rem 2rem;
+}
+.main{
+    display: flex;
+    justify-content: center;
+}
+.container{
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: center;
+    max-width: 1270px;
+    width: 90%;
+    gap: 3rem;
+}
+.image{
+    flex-shrink: 1;
+    flex-grow: 1;   
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    flex-shrink: 1;
+    flex-grow: 1;
+}
+.heading{
+    font-family: "Poppins", serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+.matter{
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.25rem;
+}
+.register{
+    font-size: 1.25rem;
+    padding: 1rem 3rem;
+    border-radius: 2rem;
+    border: 1px solid #fff;
+    box-shadow: 0px 0px 7px 1px #22065c;
+    color: hsl(257, 40%, 49%);
+    transition: color 1s ,background-color 2s , transform 2s ,scale 2s;
+&:hover{
+    color: #fff;
+    background-color: #E880E7;
+    transform: rotate(360deg);
+    scale: 2;
+    scale: 1;
+}
+}
+/* .a{    
+    margin-left: calc(100% - 120px);
+}
+.b{    
+    margin-left: calc(100% - 80px);
+}.c{    
+    margin-left: calc(100% - 40px);
+} */
+.ice{
+    width: 36px;
+    opacity: 0.3;
+    transition: scale 2s , opacity 2s;
+    &:hover{
+        scale: 1.75;
+        opacity: 1;
+    }
+}
+body h1{
+    text-align: right;
+}
+@media(width<1050px){
+    body h1{
+        text-align: center;
+    }
+}
+@media(width<980px){
+    .container{
+        flex-direction: column;
+        text-align: center;
+        margin: 4rem;
+    }
+    .register{
+        font-size: 1.5rem;
+        padding: 2rem 9rem;
+        border-radius: 4rem;
+        margin: 3rem 0 5rem 0;
+    }
+}
+@media(width<715px){
+    .image img{
+        width: 100%;
+    }
+}
+@media(width<580px){
+    .register{
+        font-size: 1rem;
+        padding: 1.5rem 5rem;
+        border-radius: 2rem;
+        margin: 1rem 0 3rem 0;
+    }
+    .heading{
+      font-size: 1.75rem;
+    }
+}
+@media(width<450px){
+    .matter{
+    font-size: 1rem;
+    }
+    .register{
+        font-size: 1rem;
+        padding: 1rem 3rem;
+        border-radius: 2rem;
+        /* margin: rem 0 0 0; */
+    }
+    body h1{
+        margin-top: -2rem;
+    }
+}
+@media(width<400px){
+    .container{
+        margin: 2rem;
+    }
+}
+@media(width<300px){
+    .container{
+        margin: 0.25rem;
+    }
+    .logo{
+        margin: 0 0 1rem 0.25rem;
+        max-width: 95%;
+    }
+}
